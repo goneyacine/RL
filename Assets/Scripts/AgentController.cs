@@ -19,8 +19,8 @@ public class AgentController : MonoBehaviour
         else if (Input.GetKey(KeyCode.A))
             Left();
 
-       // if (!(stick.eulerAngles.z < 60 && stick.eulerAngles.z > -60))
-          //  SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (Input.GetKeyDown(KeyCode.Space))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 
     }
